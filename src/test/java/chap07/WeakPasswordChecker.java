@@ -1,2 +1,5 @@
-package java.chap07;public interface WeakPasswordChecker {
+package java.chap07;
+
+public interface WeakPasswordChecker {
+    boolean checkPasswordWeak(String pw);
 }

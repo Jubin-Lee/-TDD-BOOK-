@@ -2,6 +2,8 @@ package java.chap07;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
+import static jdk.jshell.Snippet.Status.VALID;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class AutoDebitRegisterTest {
@@ -19,7 +21,7 @@ public class AutoDebitRegisterTest {
         //업체에서 받은 테스트용 유효한 카드번호 사용
         AutoDebitReq req = new AutoDebitReq("user1", "1234123412341234");
         RegisterResult result = this.register.register(req);
-        assertEquals(VALD, result.getValidity());
+        assertEquals(VALID, result.getValidity());
     }
 
     @Test
